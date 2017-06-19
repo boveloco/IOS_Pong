@@ -17,7 +17,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let category🎮: UInt32 = 0x1 << 0
     let category🏀: UInt32 = 0x1 << 1
     let 🏆 = SKLabelNode(fontNamed:"Chalkduster")
-    var score : UInt = 0
+    var score : UInt32 = 0
     var velocity = 300
     var 💙 = 3;
     var vidas = [SKLabelNode]()
@@ -87,8 +87,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let collision = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
         
         if collision == category🎮 | category🏀 {
-            score += UInt((🏀.physicsBody?.velocity.dx)!)
-            🏀.physicsBody?.velocity.dx += 100
+            if let body = 🏀.physicsBody {
+                if body.velocity.dx > 0 {
+                    score += UInt32(body.velocity.dx)
+                    body.velocity.dx += 100
+                    
+                }
+            }
+            
         }
     }
     
