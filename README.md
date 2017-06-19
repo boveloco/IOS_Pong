@@ -1,4 +1,5 @@
-Criar um documento com os seguintes tópicos:
+- [VIDEO - IOS_PONG](https://youtu.be/JFz8YF0yNWY)
+
 - Nome do projeto: ROOT
 - Equipe: André Bovendorp e Rodrigo Stacheski
 - Resumo do projeto: Remake Pong
@@ -9,4 +10,3 @@ Criar um documento com os seguintes tópicos:
 - Referencias: www.ponggame.org
 
 
-- [VIDEO - IOS_PONG](https://youtu.be/JFz8YF0yNWY)
