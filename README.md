@@ -7,3 +7,6 @@ Criar um documento com os seguintes tópicos:
 - Controle: Touch
 - Tecnologia necessária: todas aprendidas em sala
 - Referencias: www.ponggame.org
+
+
+- [VIDEO - IOS_PONG](https://youtu.be/JFz8YF0yNWY)
